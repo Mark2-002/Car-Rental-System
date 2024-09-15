@@ -235,14 +235,14 @@ class  carRentalSystem{
 
         }
         System.out.println("Thank you for using car rental system!");
+        sc.close();
     }
-
 }
 
 
 
 
-public class main {
+public class Main {
     public static void main(String[] args) {
 carRentalSystem rentalSystem=new carRentalSystem();
 car Car1= new car("C001","Camry", "Toyoto",60.0);
@@ -250,6 +250,7 @@ car Car2=new car("C002","Accord","Honda",70.0);
 car Car3=new car("C003","z1","lxd",90.0);
 rentalSystem.addCar(Car1);
 rentalSystem.addCar(Car2);
+rentalSystem.addCar(Car3);
 rentalSystem.menu();
     }
 }
